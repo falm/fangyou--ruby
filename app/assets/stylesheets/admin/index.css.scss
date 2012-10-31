@@ -1,0 +1,70 @@
+// Place all the styles related to the Admin::Index controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@charset "utf-8";
+
+
+
+
+/* render top */
+
+
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+
+
+h1{
+	color:#CCC;
+}
+
+
+.top-menu{
+	margin-top:50px;
+	margin-left:210px;
+	list-style:none;
+
+}
+
+.top-menu li{
+	float:left;
+	
+}
+
+.top-menu a{
+	color:#000;
+	padding:10px;
+	margin-left:5px;
+	margin-right:5px;
+	display:block;
+	
+	border:#999 solid 3px;
+	text-decoration:none;
+}
+
+.top-menu a:hover{
+	color:#FFF;
+	
+	border:#eee solid 3px;
+}
+
+h1{
+	margin:10px;
+	margin-bottom:0px;
+}
+
+#admin{
+	float:right;
+	margin-right:50px;
+}
+#admin a{
+	color:#CCC;
+	text-decoration:none;
+	clear:both
+}
+
+/* =====End Top =======*/

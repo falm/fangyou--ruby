@@ -1,0 +1,58 @@
+
+
+<div id="content">
+	<!--<div class="title">笔记管理</div>-->
+	<div class="data">
+	<table class="flex1"></table>
+	<script type="text/javascript">
+
+		$(".flex1").flexigrid(
+			{
+			method: 'GET',
+			url: 'notes.js',
+			dataType: 'json',
+			colModel : [
+				{display: '笔记编码', name : 'id', width : 140, sortable : true, align: 'left'},
+				{display: '标题', name : 'title', width : 180, sortable : true, align: 'conter'},
+				],
+			searchitems : [
+				{display: 'id', name : 'title', isdefault: true}
+				],
+			button: [
+				{ name: '修改', bclass: 'edit', onpress: Edit }
+			],
+			singleSelect: true,
+			sortname: "title",
+			sortorder: "asc",
+			usepager: true,
+			title: '笔记管理',
+			rp: 10,
+			//pagestat: "Affichage des lignes {from} à {to} sur {total}",
+			showTableToggleBtn: true,
+    		// width: 700, ==> auto par défaut
+			height: 400,
+			//findtext: 'Chercher',
+			//procmsg: 'En cours, veuillez patienter...',
+			//nomsg: 'Aucun résultat',
+			//outof: 'sur'
+			useRp : true,
+			}
+		);
+
+		function Edit () {
+			alert('Edit');
+		}
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function  () {
+			//alert('se');
+			$('.flex1').click(function  () {
+				//alert('se')
+				id = $('.flex1 .trSelected').find("td").eq(0).text();
+				alert(id);
+			});
+		});
+	</script>
+	</div>
+	
+</div>

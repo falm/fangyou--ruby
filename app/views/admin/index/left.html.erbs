@@ -1,0 +1,20 @@
+<!DOCTYPE html >
+<html language='zh-CN'>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+	<%= stylesheet_link_tag "left"%>
+</head>
+
+<body>
+<div class="well" style="padding: 8px 0;">
+        <ul class="nav nav-tabs nav-stacked"><!-- class="nav nav-list"> -->
+          <li class="active"><a href="#"><i class="icon-home icon-white"></i> 首页</a></li>
+          <li><a href="#"><i class="icon-book"></i> 类库</a></li>
+          <li><a href="#"><i class="icon-pencil"></i> 应用</a></li>
+          <li><a href="#"><i class="i"></i> 音乐</a></li>
+        </ul>
+      </div>
+</body>
+</html>
